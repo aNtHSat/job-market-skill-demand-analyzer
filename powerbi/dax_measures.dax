@@ -1,0 +1,134 @@
+// ==============================================================================
+// dax_measures.dax
+// Production-Ready DAX Measures for Power BI Job Market Skill-Demand Analyzer
+// ==============================================================================
+
+// ------------------------------------------------------------------------------
+// 1. VOLUME & BASELINE METRICS
+// ------------------------------------------------------------------------------
+
+Total Postings = 
+COUNTROWS('dim_jobs')
+
+Total Job-Skill Links = 
+COUNTROWS('fact_job_skills')
+
+Postings with Disclosed Salary = 
+CALCULATE(
+    COUNTROWS('dim_jobs'),
+    NOT(ISBLANK('dim_jobs'[salary_avg_lpa]))
+)
+
+Salary Disclosure Rate % = 
+DIVIDE([Postings with Disclosed Salary], [Total Postings], 0)
+
+
+// ------------------------------------------------------------------------------
+// 2. SKILL PENETRATION & DEMAND METRICS
+// ------------------------------------------------------------------------------
+
+// Calculates the percentage of filtered job postings that explicitly require the selected skill(s)
+Skill Demand Count = 
+DISTINCTCOUNT('fact_job_skills'[job_id])
+
+Skill Market Penetration % = 
+VAR FilteredJobs = [Skill Demand Count]
+VAR TotalMarketJobs = CALCULATE(DISTINCTCOUNT('dim_jobs'[job_id]), ALLSELECTED('dim_skills'))
+RETURN
+DIVIDE(FilteredJobs, TotalMarketJobs, 0)
+
+// Quick Core Tool Penetration Measures
+SQL Penetration % = 
+CALCULATE(
+    [Skill Market Penetration %],
+    KEEPFILTERS('dim_skills'[skill_name] = "SQL")
+)
+
+Python Penetration % = 
+CALCULATE(
+    [Skill Market Penetration %],
+    KEEPFILTERS('dim_skills'[skill_name] = "Python")
+)
+
+Power BI Penetration % = 
+CALCULATE(
+    [Skill Market Penetration %],
+    KEEPFILTERS('dim_skills'[skill_name] = "Power BI")
+)
+
+Tableau Penetration % = 
+CALCULATE(
+    [Skill Market Penetration %],
+    KEEPFILTERS('dim_skills'[skill_name] = "Tableau")
+)
+
+BI Tool Preference Ratio = 
+// Returns > 1.0 if Power BI leads in the selected segment, < 1.0 if Tableau leads
+DIVIDE([Power BI Penetration %], [Tableau Penetration %], 0)
+
+
+// ------------------------------------------------------------------------------
+// 3. SALARY ANALYSIS & SKILL PREMIUM MEASURES
+// ------------------------------------------------------------------------------
+
+Average Salary LPA = 
+AVERAGE('dim_jobs'[salary_avg_lpa])
+
+Median Salary LPA = 
+MEDIAN('dim_jobs'[salary_avg_lpa])
+
+Min Salary LPA = 
+MIN('dim_jobs'[salary_min_lpa])
+
+Max Salary LPA = 
+MAX('dim_jobs'[salary_max_lpa])
+
+// Skill Salary Premium:
+// Compares average salary of postings requiring selected skill against overall baseline
+Market Baseline Avg Salary LPA = 
+CALCULATE(
+    AVERAGE('dim_jobs'[salary_avg_lpa]),
+    ALL('dim_skills')
+)
+
+Skill Salary Premium LPA = 
+IF(
+    ISBLANK([Average Salary LPA]),
+    BLANK(),
+    [Average Salary LPA] - [Market Baseline Avg Salary LPA]
+)
+
+Skill Salary Premium % = 
+DIVIDE([Skill Salary Premium LPA], [Market Baseline Avg Salary LPA], 0)
+
+
+// ------------------------------------------------------------------------------
+// 4. RANKING & DYNAMIC HIGHLIGHTS
+// ------------------------------------------------------------------------------
+
+Skill Rank by Demand = 
+IF(
+    HASONEVALUE('dim_skills'[skill_name]),
+    RANKX(
+        ALLSELECTED('dim_skills'[skill_name]),
+        [Skill Demand Count],
+        ,
+        DESC,
+        DENSE
+    ),
+    BLANK()
+)
+
+Top 10 Skill Filter = 
+IF([Skill Rank by Demand] <= 10, 1, 0)
+
+
+// ------------------------------------------------------------------------------
+// 5. EXPERIENCE & BREADTH METRICS
+// ------------------------------------------------------------------------------
+
+Average Required Min Experience = 
+AVERAGE('dim_jobs'[min_exp_years])
+
+Average Skills per Posting = 
+AVERAGE('dim_jobs'[skills_count])

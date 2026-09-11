@@ -1,0 +1,52 @@
+primary_skill,paired_skill,pair_frequency
+Python,SQL,1345
+Excel,SQL,838
+SQL,Tableau,808
+SQL,Snowflake,767
+Excel,Tableau,756
+AWS,Python,692
+Excel,Python,673
+AWS,SQL,659
+Python,Tableau,624
+Power BI,SQL,570
+Azure,SQL,565
+Machine Learning,Python,556
+Excel,Power BI,521
+Power BI,Tableau,482
+Power BI,Python,434
+Excel,Machine Learning,426
+Machine Learning,SQL,423
+Python,Snowflake,416
+Azure,Python,403
+AWS,Excel,381
+Python,dbt,364
+SQL,dbt,350
+AWS,Tableau,338
+Excel,Snowflake,335
+Machine Learning,Tableau,326
+Snowflake,Tableau,308
+Azure,Excel,280
+AWS,Power BI,258
+AWS,Snowflake,248
+Excel,dbt,231
+Azure,Tableau,229
+Power BI,Snowflake,229
+Apache Spark,SQL,197
+AWS,Azure,195
+Azure,Snowflake,195
+Machine Learning,Power BI,194
+Azure,Power BI,180
+Apache Spark,Azure,176
+Azure,dbt,176
+Tableau,dbt,176
+Apache Spark,dbt,174
+Snowflake,dbt,166
+Apache Spark,Python,165
+AWS,Machine Learning,163
+AWS,dbt,157
+Apache Spark,Snowflake,151
+AWS,Apache Spark,141
+Machine Learning,Snowflake,104
+Power BI,dbt,101
+Machine Learning,dbt,96
+Azure,Machine Learning,94

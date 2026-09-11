@@ -1,0 +1,9 @@
+location_id,city,state,country,city_tier,is_tech_hub
+LOC-001,Mumbai,Maharashtra,India,Tier 1,1
+LOC-002,Noida,Uttar Pradesh,India,Tier 1,0
+LOC-003,Bengaluru,Karnataka,India,Tier 1,1
+LOC-004,Chennai,Tamil Nadu,India,Tier 1,0
+LOC-005,Gurgaon,Haryana,India,Tier 1,1
+LOC-006,Hyderabad,Telangana,India,Tier 1,1
+LOC-007,Pune,Maharashtra,India,Tier 1,1
+LOC-008,Remote,All India,India,Remote,0

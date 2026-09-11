@@ -1,0 +1,122 @@
+skill_id,skill_name,skill_category
+SKILL-0001,Excel,BI & Visualization
+SKILL-0002,BigQuery,Cloud & Data Warehousing
+SKILL-0003,SQL,Databases & SQL
+SKILL-0004,Tableau,BI & Visualization
+SKILL-0005,Pandas,Data Science & Analytics
+SKILL-0006,Data Storytelling,Professional & Soft Skills
+SKILL-0007,Oracle,Databases & SQL
+SKILL-0008,PostgreSQL,Databases & SQL
+SKILL-0009,Database-Design,Other Technical Skills
+SKILL-0010,T-SQL,Databases & SQL
+SKILL-0011,MySQL,Databases & SQL
+SKILL-0012,Linux,Programming & Languages
+SKILL-0013,PL/SQL,Databases & SQL
+SKILL-0014,SQL Server,Databases & SQL
+SKILL-0015,Troubleshooting,Other Technical Skills
+SKILL-0016,Query Optimization,Other Technical Skills
+SKILL-0017,Python,Programming & Languages
+SKILL-0018,NumPy,Data Science & Analytics
+SKILL-0019,Git,DevOps & Collaboration
+SKILL-0020,Excel VBA,BI & Visualization
+SKILL-0021,Communication,Professional & Soft Skills
+SKILL-0022,dbt,Big Data & Engineering
+SKILL-0023,Sql-Server,Other Technical Skills
+SKILL-0024,SSIS,BI & Visualization
+SKILL-0025,Database Design,Other Technical Skills
+SKILL-0026,Database Indexing,Other Technical Skills
+SKILL-0027,System Architecture,Other Technical Skills
+SKILL-0028,Business Intelligence,Other Technical Skills
+SKILL-0029,Power Bi,Other Technical Skills
+SKILL-0030,Looker,BI & Visualization
+SKILL-0031,Azure,Cloud & Data Warehousing
+SKILL-0032,AWS,Cloud & Data Warehousing
+SKILL-0033,Data Governance,Other Technical Skills
+SKILL-0034,Hadoop,Big Data & Engineering
+SKILL-0035,Docker,DevOps & Collaboration
+SKILL-0036,Cross-Functional Collaboration,Other Technical Skills
+SKILL-0037,Data Pipelines,Big Data & Engineering
+SKILL-0038,DAX,BI & Visualization
+SKILL-0039,Executive Reporting,Other Technical Skills
+SKILL-0040,ETL,Big Data & Engineering
+SKILL-0041,Azure Synapse,Cloud & Data Warehousing
+SKILL-0042,Client Presentation,Other Technical Skills
+SKILL-0043,Data Modeling,BI & Visualization
+SKILL-0044,Snowflake,Cloud & Data Warehousing
+SKILL-0045,Data Warehousing,Big Data & Engineering
+SKILL-0046,Azure Sql,Other Technical Skills
+SKILL-0047,Machine-Learning,Other Technical Skills
+SKILL-0048,Agile/Scrum,Professional & Soft Skills
+SKILL-0049,Asyncio,Other Technical Skills
+SKILL-0050,Celery,Other Technical Skills
+SKILL-0051,Power BI,BI & Visualization
+SKILL-0052,Machine Learning,Data Science & Analytics
+SKILL-0053,MongoDB,Databases & SQL
+SKILL-0054,NoSQL,Databases & SQL
+SKILL-0055,Query-Optimization,Other Technical Skills
+SKILL-0056,Analytical Mindset,Other Technical Skills
+SKILL-0057,Stored Procedures,Other Technical Skills
+SKILL-0058,Client-Presentation,Other Technical Skills
+SKILL-0059,SSRS,BI & Visualization
+SKILL-0060,Databricks,Cloud & Data Warehousing
+SKILL-0061,Rest Apis,Other Technical Skills
+SKILL-0062,Fastapi,Other Technical Skills
+SKILL-0063,CI/CD,DevOps & Collaboration
+SKILL-0064,Django,Other Technical Skills
+SKILL-0065,Power Query,BI & Visualization
+SKILL-0066,Star-Schema,Other Technical Skills
+SKILL-0067,Microsoft Fabric,Cloud & Data Warehousing
+SKILL-0068,Performance Tuning,Other Technical Skills
+SKILL-0069,Problem Solving,Professional & Soft Skills
+SKILL-0070,Statistics,Data Science & Analytics
+SKILL-0071,Gcp Bigquery,Other Technical Skills
+SKILL-0072,High Availability Systems,Other Technical Skills
+SKILL-0073,Apache Airflow,Big Data & Engineering
+SKILL-0074,Apache Kafka,Big Data & Engineering
+SKILL-0075,Google Cloud,Cloud & Data Warehousing
+SKILL-0076,Exploratory Data Analysis,Data Science & Analytics
+SKILL-0077,Stakeholder Management,Professional & Soft Skills
+SKILL-0078,Performance-Tuning,Other Technical Skills
+SKILL-0079,Dashboard Design,BI & Visualization
+SKILL-0080,Apache Spark,Big Data & Engineering
+SKILL-0081,PySpark,Big Data & Engineering
+SKILL-0082,Scala,Programming & Languages
+SKILL-0083,Kubernetes,DevOps & Collaboration
+SKILL-0084,Data-Pipelines,Other Technical Skills
+SKILL-0085,Terraform,Other Technical Skills
+SKILL-0086,Flask,Other Technical Skills
+SKILL-0087,Team Collaboration,Other Technical Skills
+SKILL-0088,Database-Indexing,Other Technical Skills
+SKILL-0089,Data Visualization,BI & Visualization
+SKILL-0090,Gcp-Bigquery,Other Technical Skills
+SKILL-0091,Delta Lake,Other Technical Skills
+SKILL-0092,Apache-Spark,Other Technical Skills
+SKILL-0093,Analytical-Mindset,Other Technical Skills
+SKILL-0094,Code Review,Other Technical Skills
+SKILL-0095,Dashboard-Design,Other Technical Skills
+SKILL-0096,Oop,Other Technical Skills
+SKILL-0097,Pytest,Other Technical Skills
+SKILL-0098,Data-Modeling,Other Technical Skills
+SKILL-0099,Data-Governance,Other Technical Skills
+SKILL-0100,Executive-Reporting,Other Technical Skills
+SKILL-0101,Team-Collaboration,Other Technical Skills
+SKILL-0102,Redis,Databases & SQL
+SKILL-0103,Data-Warehousing,Other Technical Skills
+SKILL-0104,Stakeholder-Management,Other Technical Skills
+SKILL-0105,Communication-Skills,Other Technical Skills
+SKILL-0106,Code-Review,Other Technical Skills
+SKILL-0107,Stored-Procedures,Other Technical Skills
+SKILL-0108,Cross-Functional-Collaboration,Other Technical Skills
+SKILL-0109,Problem-Solving,Other Technical Skills
+SKILL-0110,Excel-Vba,Other Technical Skills
+SKILL-0111,Power-Query,Other Technical Skills
+SKILL-0112,System-Architecture,Other Technical Skills
+SKILL-0113,Data-Storytelling,Other Technical Skills
+SKILL-0114,High-Availability-Systems,Other Technical Skills
+SKILL-0115,Business-Intelligence,Other Technical Skills
+SKILL-0116,Data-Visualization,Other Technical Skills
+SKILL-0117,Azure-Sql,Other Technical Skills
+SKILL-0118,Tableau-Desktop,Other Technical Skills
+SKILL-0119,Delta-Lake,Other Technical Skills
+SKILL-0120,Rest-Apis,Other Technical Skills
+SKILL-0121,Azure-Synapse,Other Technical Skills
