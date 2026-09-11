@@ -187,3 +187,5 @@ ORDER BY co_occurrence_count DESC LIMIT 10;
 
 - Tailored resume bullets with metrics: [`resume_and_interview/RESUME_BULLETS.md`](resume_and_interview/RESUME_BULLETS.md)
 - 10 STAR-format technical interview answers: [`resume_and_interview/INTERVIEW_QUESTIONS.md`](resume_and_interview/INTERVIEW_QUESTIONS.md)
+#   j o b - m a r k e t - s k i l l - d e m a n d - a n a l y z e r  
+ 
